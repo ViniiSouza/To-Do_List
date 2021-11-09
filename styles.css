@@ -1,0 +1,26 @@
+* {
+    font-family: Calibri;
+}
+
+ul{
+    list-style-type: none;
+}
+.list-item{
+    margin: 1vh auto;
+    border-bottom: 2px solid black;
+    width: 30vw;
+    height: 5vh;
+    font-size: 1vw;
+    
+}
+
+.mid-align{
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.delete-button{
+    position:absolute;
+    left: 62vw;
+}

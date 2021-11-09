@@ -1,3 +1,15 @@
+<!--
+    OK - Um título na aba do navegador, para que o usuário encontre a sua aplicação no meio das várias abas que constantemente mantém abertas.
+    ! - Um cabeçalho dentro da página, para que o usuário saiba facilmente em que página se encontra e do que se trata o conteúdo.
+    OK - Um campo de texto para digitar o nome de uma nova atividade a ser adicionada à lista.
+    OK - Um botão para adicionar uma nova atividade à lista.
+    OK - Uma lista contendo as atividades já inseridas.
+    OK - Cada linha da lista deve conter: checkbox para o usuário marcar que aquela atividade já foi realizada; o texto que o usuário digitou ao cadastrar a atividade; botão para excluir a atividade da lista, caso desejado.
+    ! - Quando o usuário marcar uma tarefa como realizada, o texto daquela linha deve ser tachado (line-through).
+    ! - A lista deve ser salva no "localStorage" do navegador (incluindo quais itens já foram realizados), e deve ser carregada sempre que a página for reaberta.
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,10 +17,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    
+    <header class="mid-align">
+        <h1>Lista de Afazeres</h1>
+    </header>
+    <hr>
+    <section class="mid-align">
+        <input type="text">
+        <button>Adicionar</button>
+    </section>
+    <ul>
+        <li class="list-item">
+            <input type="checkbox"> <span>Testes AA</span> <button class="delete-button">X</button>
+        </li>
+        <li class="list-item">
+            <input type="checkbox"> <span>Testes</span> <button class="delete-button">X</button>
+        </li>
+    </ul>
+
 </body>
 </html>
