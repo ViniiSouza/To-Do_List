@@ -52,8 +52,21 @@ function adicionarItemLista(){
     
     if(true){
         document.getElementById('lista-afazeres').appendChild(criarItemLista());
+        
+        salvarTarefas();
+
     }
     else{
         alert("Vazio")
     }
+}
+
+function salvarTarefas(){
+    var tarefas = document.querySelectorAll('.list-item')
+    listaTarefas = []
+    for(let tarefa of tarefas){
+        listaTarefas.push({'checkbox':tarefa.children[0].checked,'tarefa':tarefa.children[1].textContent})
+    }
+    localStorage.setItem('Lista', JSON.stringify(listaTarefas));
+
 }
