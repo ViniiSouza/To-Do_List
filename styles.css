@@ -10,7 +10,8 @@ ul{
     border-bottom: 2px solid black;
     width: 30vw;
     height: 5vh;
-    font-size: 1vw;
+    font-size: 1.3vmax;
+    font-family: Calibri;
     
 }
 
@@ -23,4 +24,17 @@ ul{
 .delete-button{
     position:absolute;
     left: 62vw;
+    font-size: 1vw;
+    
+}
+
+.striked{
+    text-decoration: line-through;
+    color: grey;
+    font-style: italic;
+}
+#texto-adicionar{
+    width: 20vw;
+    height: 3vh;
+    font-size: 1vmax;
 }

@@ -25,17 +25,13 @@
         <h1>Lista de Afazeres</h1>
     </header>
     <hr>
+
     <section class="mid-align">
-        <input type="text">
-        <button>Adicionar</button>
+        <input id="texto-adicionar" type="text" placeholder="Digite a atividade a ser adicionada...">
+        <button id="botao-adicionar" onclick="adicionarItemLista()">Adicionar</button>
     </section>
-    <ul>
-        <li class="list-item">
-            <input type="checkbox"> <span>Testes AA</span> <button class="delete-button">X</button>
-        </li>
-        <li class="list-item">
-            <input type="checkbox"> <span>Testes</span> <button class="delete-button">X</button>
-        </li>
+    
+    <ul id="lista-afazeres">
     </ul>
 
 </body>
