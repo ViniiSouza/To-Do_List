@@ -11,7 +11,8 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,27 +20,40 @@
     <title>To-Do List</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts/script.js"></script>
+    <script src="scripts/localStorage.js"></script>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 </head>
-<body>
+
+<body onload="carregarTarefas()">
     <header class="mid-align">
-        <h1>Lista de Afazeres</h1>
+        <h1>To-Do List</h1>
     </header>
     <hr>
 
-    <section class="mid-align">
-        <input id="texto-adicionar" type="text" placeholder="Digite a atividade a ser adicionada...">
-        <button id="botao-adicionar" onclick="adicionarItemLista()">Adicionar</button>
+    <section class="mid-align form-lista">
+        <!--Falta estilizar titulo-->
+        <h1 class="titulo">Lista de Afazeres</h1>
+        <input id="texto-adicionar" maxlength="35" type="text" placeholder="Digite a atividade a ser adicionada...">
+        <label id="botao-adicionar" onclick="adicionarItemLista()">Adicionar</label>
+        <br>
+        <br>
+        <div class="mid-align">
+            <label id="save-button" onclick="salvarTarefas()">Salvar</label>
+            <label id="clear-button" onclick="">Limpar lista</label>
+        </div>
+        <br>
     </section>
-    
-    <div id="lista">
+
+    <section id="lista">
         <ul id="lista-afazeres">
         </ul>
-        <button onclick="salvarTarefas()">Salvar</button>
-    </div>
+        
+    </section>
 
     <footer>
-        <!---->
+        <h5 id="creditos">Vinícius Gabriel de Souza - 2021</h5>
     </footer>
 
 </body>
+
 </html>
