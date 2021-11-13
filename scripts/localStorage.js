@@ -9,8 +9,6 @@ function salvarTarefas() {
 
 function carregarTarefas() {
     listaTarefas = JSON.parse(localStorage.getItem('Lista'));
-    console.log(listaTarefas);
-    //adicionarItemLista();
     for (tarefa of listaTarefas) {
         document.getElementById('lista-afazeres').appendChild(criarItemLista(tarefa.tarefa, tarefa.checkbox));
     }

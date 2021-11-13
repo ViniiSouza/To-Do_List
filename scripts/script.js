@@ -63,7 +63,6 @@ function strikeSpan(event) {
 
 function limparLista() {
     var itensLista = document.querySelectorAll('.list-item');
-    console.log(itensLista);
     if (itensLista.length == 0) {
         alert("A lista está vazia!");
     }

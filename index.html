@@ -1,15 +1,3 @@
-<!--
-    OK - Um título na aba do navegador, para que o usuário encontre a sua aplicação no meio das várias abas que constantemente mantém abertas.
-    ! - Um cabeçalho dentro da página, para que o usuário saiba facilmente em que página se encontra e do que se trata o conteúdo.
-    OK - Um campo de texto para digitar o nome de uma nova atividade a ser adicionada à lista.
-    OK - Um botão para adicionar uma nova atividade à lista.
-    OK - Uma lista contendo as atividades já inseridas.
-    OK - Cada linha da lista deve conter: checkbox para o usuário marcar que aquela atividade já foi realizada; o texto que o usuário digitou ao cadastrar a atividade; botão para excluir a atividade da lista, caso desejado.
-    ! - Quando o usuário marcar uma tarefa como realizada, o texto daquela linha deve ser tachado (line-through).
-    ! - A lista deve ser salva no "localStorage" do navegador (incluindo quais itens já foram realizados), e deve ser carregada sempre que a página for reaberta.
-
--->
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -18,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <script src="scripts/script.js"></script>
     <script src="scripts/localStorage.js"></script>
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 </head>
 
 <body onload="carregarTarefas()">
@@ -31,7 +19,6 @@
     <hr>
 
     <section class="mid-align form-lista">
-        <!--Falta estilizar titulo-->
         <h1 class="titulo">Lista de Afazeres</h1>
         <input id="texto-adicionar" maxlength="35" type="text" placeholder="Digite a atividade a ser adicionada...">
         <button id="botao-adicionar" onclick="adicionarItemLista()">Adicionar</button>

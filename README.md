@@ -1,4 +1,4 @@
-<h1 align="center"> Projeto 1 DevInHouse - To-Do List </h1>
+<h1 align="center"> Projeto 1 DevInHouse - To-Do List</h1>
 
 <h1 align="center">
 Site demonstração: https://viniisouza.github.io/To-Do_List/ 
