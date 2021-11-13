@@ -19,7 +19,7 @@ function criarItemLista(texto, checked) {
 
     itemLista.appendChild(span);
 
-    var button = document.createElement('label');
+    var button = document.createElement('button');
     button.classList.add('delete-button');
     button.textContent = 'X';
 
@@ -28,6 +28,7 @@ function criarItemLista(texto, checked) {
         var confirmar = confirm('Deseja mesmo excluir esta atividade?')
         if (confirmar) {
             itemLista.remove();
+            salvarTarefas();
         }
     })
 
@@ -56,5 +57,23 @@ function strikeSpan(event) {
     }
     else {
         span.classList.remove('striked');
+    }
+    salvarTarefas();
+}
+
+function limparLista() {
+    var itensLista = document.querySelectorAll('.list-item');
+    console.log(itensLista);
+    if (itensLista.length == 0) {
+        alert("A lista está vazia!");
+    }
+    else {
+        var confirmar = confirm("Deseja mesmo excluir todos os itens da lista?");
+        if (confirmar) {
+            for (item of itensLista) {
+                item.remove();
+            }
+            salvarTarefas();
+        }
     }
 }

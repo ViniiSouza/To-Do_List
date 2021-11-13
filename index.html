@@ -34,12 +34,11 @@
         <!--Falta estilizar titulo-->
         <h1 class="titulo">Lista de Afazeres</h1>
         <input id="texto-adicionar" maxlength="35" type="text" placeholder="Digite a atividade a ser adicionada...">
-        <label id="botao-adicionar" onclick="adicionarItemLista()">Adicionar</label>
+        <button id="botao-adicionar" onclick="adicionarItemLista()">Adicionar</button>
         <br>
         <br>
         <div class="mid-align">
-            <label id="save-button" onclick="salvarTarefas()">Salvar</label>
-            <label id="clear-button" onclick="">Limpar lista</label>
+            <button id="clear-button" onclick="limparLista()">Limpar lista</button>
         </div>
         <br>
     </section>
@@ -47,11 +46,13 @@
     <section id="lista">
         <ul id="lista-afazeres">
         </ul>
-        
+
     </section>
 
     <footer>
-        <h5 id="creditos">Vinícius Gabriel de Souza - 2021</h5>
+        <h5 id="creditos"><a target="_blank"
+                href="https://www.linkedin.com/in/vin%C3%ADcius-gabriel-de-souza-b3950815a/">Vinícius Gabriel de
+                Souza</a> - 2021 Linkedin</h5>
     </footer>
 
 </body>

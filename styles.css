@@ -2,6 +2,10 @@
     font-family: Calibri;
 }
 
+body {
+    background-color: darkgrey;
+}
+
 .mid-align {
     margin: 0 auto;
     vertical-align: middle;
@@ -9,31 +13,38 @@
 }
 
 .striked {
-    text-decoration: line-through;
     color: grey;
+    text-decoration: line-through;
     font-style: italic;
 }
 
 .form-lista {
-    background-color: #E8D725;
+    background-color: #232325;
     max-width: 35%;
     margin: 0 auto;
     margin-bottom: 0px;
 }
 
 .titulo {
-    font-size: 30px;
+    color: #333333;
+    background-color: #FFD800;
+    font-size: 26px;
 }
 
 #texto-adicionar {
-    border-radius: 5px;
+    background-color: #585857;
+    color: white;
     width: 20vw;
     height: 3vh;
     font-size: 1vmax;
 }
 
+#texto-adicionar::placeholder {
+    color: grey;
+}
+
 #botao-adicionar {
-    background-color: darkgreen;
+    background-color: black;
     color: white;
     border: 2px solid black;
     border-radius: 5px;
@@ -43,14 +54,14 @@
     transition: .5s;
 }
 
-#botao-adicionar:hover {
+#botao-adicionar:hover, #botao-adicionar:focus {
     background-color: #2c8e39;
     border-color: #2c8e39;
     transition: .5s;
 }
 
 #lista {
-    background-color: #fcf4b2;
+    background-color: #585857;
     max-width: 35%;
     margin: 0 auto;
     padding-top: 10px;
@@ -64,8 +75,8 @@
 }
 
 .list-item {
-    color: #191B6A;
-    border: 2px solid #191B6A;
+    color: white;
+    border: 2px solid white;
     margin: 1vh auto;
     border-radius: 10px;
     width: 30vw;
@@ -76,40 +87,26 @@
 }
 
 .delete-button {
-    border: 1px solid #191B6A;
+    color: inherit;
+    border: 1px solid #FFD800;
     border-radius: 3px;
     position: sticky;
     left: 31vw;
     font-size: .9vw;
     padding: 3px;
     cursor: pointer;
+    background-color: inherit;
 }
 
-.delete-button:hover {
-    background-color: #f27d7d;
-}
-
-#save-button {
-    background-color: darkgreen;
-    color: white;
-    border: 2px solid #191B6A;
-    border-radius: 5px;
-    padding: 4px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-#save-button:hover {
-    background-color: #2c8e39;
-    border-color: #2c8e39;
-    transition: .5s;
+.delete-button:hover, .delete-button:focus {
+    background-color: #FFD800;
+    transition: 1s;
 }
 
 #clear-button {
-    background-color: #b4b4b4;
+    background-color: black;
     color: white;
-    border: 2px solid #191B6A;
+    border: 2px solid black;
     border-radius: 5px;
     padding: 4px;
     font-size: 18px;
@@ -117,15 +114,21 @@
     transition: .5s;
 }
 
-#clear-button:hover {
-    background-color: #747474;
+#clear-button:hover, #clear-button:focus {
+    background-color: rgb(207, 207, 207);
+    border-color: rgb(207, 207, 207);
+    color: black;
     transition: .5s;
 }
 
 #creditos {
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
     position: fixed;
     left: 45%;
     bottom: 0;
+}
+
+#creditos>a {
+    color: black;
 }
